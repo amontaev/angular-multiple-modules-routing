@@ -3,8 +3,8 @@ import { CommonModule } from '@angular/common';
 import { AuthComponent } from './auth.component';
 import { SignInComponent } from './pages/sign-in/sign-in.component';
 import { SignUpComponent } from './pages/sign-up/sign-up.component';
-import { RecoveryPasswordComponent } from './pages/recovery-password/recovery-password.component';
-
+import { RouterModule } from '@angular/router';
+import { AuthRoutingModule } from './auth-routing.module';
 
 
 @NgModule({
@@ -12,10 +12,11 @@ import { RecoveryPasswordComponent } from './pages/recovery-password/recovery-pa
     AuthComponent,
     SignInComponent,
     SignUpComponent,
-    RecoveryPasswordComponent
   ],
   imports: [
-    CommonModule
+    CommonModule,
+    RouterModule,
+    AuthRoutingModule
   ]
 })
 export class AuthModule { }
