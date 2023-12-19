@@ -1,2 +1,8 @@
-<p>admin-host works!</p>
+<p>admin-host sidebar</p>
+<ul>
+    <li><a [routerLink]="['/admin/news']">go to news</a></li>
+    <li><a [routerLink]="['/admin/dashboard']">go to dashboard</a></li>
+    <li><a [routerLink]="['/admin/settings']">go to settings</a></li>
+    <li><a [routerLink]="['/auth/']">exit</a></li>
+</ul>
 <router-outlet></router-outlet>
